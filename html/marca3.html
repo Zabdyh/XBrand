@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="marca1.css">
+    <title>Cerveza Toña</title>
+    <style>
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .video-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .Video, .Informacion {
+                width: 100%;
+                max-width: 100%;
+                text-align: center;
+            }
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo-footer {
+                margin: 10px 0;
+            }
+            .menu-icon {
+                height: 20px;
+                width: 25px;
+            }
+            .bar {
+                height: 3px;
+            }
+            nav ul li {
+                margin: 15px 0;
+            }
+            footer {
+                height: auto;
+                padding: 20px 10px;
+            }
+            .social-media img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú -->
+    <header>
+        <div class="container">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <!-- Ícono del menú hamburguesa -->
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="logo">
+                <img src="img/xbrabd-iconblan.png" alt="Logo">
+            </div>
+        </div>
+    </header>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="#about">Sobre nosotros</a></li>
+            <li><a href="#courses">Cursos</a></li>
+            <li><a href="#explore">Explorar más</a></li>
+        </ul>
+    </nav>
+
+<!-- Sección de Video y Texto de Información -->
+<div class="video-section">
+    <div class="Video">
+      <video src="img/toña/Cerveza Toña 23 Lata.mp4" autoplay loop muted></video>
+    </div>
+    <div class="Informacion">
+      Es la cerveza que representa y acompaña <br>
+      a los nicaragüenses en todo momento, elaborada <br>
+      con orgullo nacional y con los más altos estándares de calidad y sabor.
+    </div>
+<h1 class="LogoAg">Antiguo</h1>
+<div class="ImgAg"></div>
+<h1 class="LogoAc">Actual</h1>
+<div class="ImgAc"></div>
+<h1 class="tradiciones">Tradiciones</h1>
+<div class="imtradi"></div>
+<h1 class="nicaragua">Nicaragua</h1>
+<div class="imgnic"></div>
+<h1 class="cultura">Cultura</h1>
+<div class="imgcult"></div>
+
+<div class="logoante"></div>
+<div class="logoult"></div>
+
+
+
+ <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            </div>
+            <div class="logo-footer">
+                <img src="img/xbrabd-iconblan.png" alt="Logo">
+            </div>
+          <a class="ini" href="index.html"> <div class="copyright">
+                <p>&copy; 2024 XBrand. Todos los derechos reservados.</p>
+            </div></a> 
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

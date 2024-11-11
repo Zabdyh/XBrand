@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>ínicio</title>
+    <link rel="stylesheet" href="Inicio.css">
+    <style>
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .circulocontainer {
+                flex-direction: column;
+                margin-top: 100px;
+            }
+            .círculo {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .v6_5 {
+                width: 300px;
+                height: 300px;
+            }
+            .Bienvenida .v6_6, .Bienvenida .v6_9, .Bienvenida .v19_2, .Bienvenida .v6_10, .Bienvenida .v6_11 {
+                font-size: 24px;
+            }
+            .boton {
+                width: 200px;
+                height: 60px;
+                font-size: 24px;
+            }
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo-footer {
+                margin: 10px 0;
+            }
+            .menu-icon {
+                height: 20px;
+                width: 25px;
+            }
+            .bar {
+                height: 3px;
+            }
+            nav ul li {
+                margin: 15px 0;
+            }
+            footer {
+                height: auto;
+                padding: 20px 10px;
+            }
+            .social-media img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú -->
+    <header>
+        <div class="container">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <!-- Ícono del menú hamburguesa -->
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="logo">
+              <a href="index.html"><img src="img/xbrabd-iconblan.png" alt="Logo"></a> 
+            </div>
+        </div>
+    </header>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="equipo.html">Sobre nosotros</a></li>
+            <li><a href="curso.html">Cursos</a></li>
+            <li><a href="explorar.html">Explorar más</a></li>
+        </ul>
+    </nav>
+    
+    <!-- cuerpo -->
+    <div class="circulocontainer">
+        <div class="círculo">
+            <div class="v6_5"></div>
+            <div class="v88_7"></div>
+        </div>
+    
+        <div class="Bienvenida">
+            <span class="v6_6">Hola! Soy Kira</span>
+            <span class="v6_9">Bienvenidos a</span>
+            <span class="v19_2">XBrand</span>
+            <span class="v6_10">Aquí te enseñaremos sobre branding.</span>
+            <span class="v6_11">¡Acompáñame!</span>
+            <div class="boton"><a href="curso.html">Empezar</a></div>
+        </div>
+    </div>
+    
+    <div class="Marcas">
+        <h1 class="v55_5">Marcas</h1>
+    </div>
+    
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="marca1.html"><img src="img/toña/boton.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="marca2.html"><img src="img/cafe presto/boton.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="marca3.html"><img src="img/toyota/boton.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="marca4.html"><img src="img/samsung/boton.png" alt=""></a></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    
+    <h1 class="v126_2">¡Conoce los personajes de XBrand!</h1>
+
+    <div class="personajes">
+        <img class="personajek" src="" alt="">
+    <img class="personajeL" src="" alt="">
+    
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="img/instagram.png" alt="Twitter"></a>
+            </div>
+            <div class="logo-footer">
+                <img src="img/xbrabd-iconblan.png" alt="Logo">
+            </div>
+            <a class="ini" href="index.html">
+                <div class="copyright">
+                    <p>&copy; 2024 XBrand. Todos los derechos reservados.</p>
+                </div>
+            </a> 
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

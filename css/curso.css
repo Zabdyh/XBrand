@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, Helvetica,Arial, sans-serif;
+    background: linear-gradient(#11212D, #010101);
+    min-height: 350vh; /* Cambiado a min-height para mostrar el degradado */
+}
+
+header {
+    background-color:  rgba(34, 124, 189, 0.9);; /* Color con opacidad para el header */
+    height: 100px;
+    display: flex;
+    justify-content: center; /* Centra el contenido en el header */
+    align-items: center;
+    position: fixed; /* Fija el header */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centra el logo */
+    align-items: center;
+    position: relative;
+    width: 100%; /* Cambiado a 100% para ajustarse al header */
+    padding: 0 20px; /* Espaciado en los lados */
+}
+
+.menu-icon {
+    cursor: pointer;
+    position: absolute; /* Posición absoluta para el menú */
+    left: 20px; /* Mantiene el icono del menú a la izquierda */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 30px;
+}
+
+.bar {
+    height: 4px;
+    width: 100%;
+    background-color: white;
+}
+
+.logo {
+    flex: 1; /* Permite que el logo ocupe el espacio disponible */
+    display: flex; /* Usar flex para centrar el logo */
+    justify-content: center; /* Centra el logo */
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    position: fixed;
+    top: 100px; /* Cambiado a 100px para estar debajo del header */
+    left: -100%;
+    width: 250px;
+    height: calc(100vh - 100px); /* Altura dinámica según el tamaño de la ventana */
+    background-color: #11212D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: left 0.3s ease;
+}
+
+nav.active {
+    left: 0;
+    height: 200px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #227CBD;
+}
+
+
+  .v126_13 {
+    width: 295px;
+    color: rgba(255,255,255,1); /*curso*/
+    position: absolute;
+    top: 183px;
+    left: 80px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 40px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v139_28 {
+    width: 550px;
+    height: 350px;
+    background: url("img/branding.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 338px;
+    left: 150px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    overflow: hidden;
+  }
+ 
+  .v135_17 {
+    width: 260px;
+    color: white;
+    position: absolute;
+    top: 135px;
+    left: 150px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 60px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .v139_29 {
+    width: 550px;
+    height: 350px;
+    background: url("img/tipos.png"); /*tipos*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 338px;
+    left: 810px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    overflow: hidden;
+  }
+  
+  .v135_15 {
+    width: 284px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 83px;
+    left: 133px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 60px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v142_32 {
+    width: 550px;
+    height: 350px;
+    background: url("img/componentes.png"); /*componentes*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 789px;
+    left: 150px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    overflow: hidden;
+  }
+
+  
+  .v135_20 {
+    width: 423px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 92px;
+    left: 63px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 60px;
+    opacity: 1;
+    text-align: center;
+  }
+
+  
+  .v142_33 {
+    width: 550px;
+    height: 350px;
+    background: url("img/asignacion.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 500;
+    position: absolute;
+    top: 789px;
+    left: 810px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    overflow: hidden;
+  }
+ 
+  .v135_23 {
+    width: 309px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 105px;
+    left: 120px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 60px;
+    opacity: 1;
+    text-align: center;
+  }
+ 
+  .v144_36 {
+    width: 550px;
+    height: 350px;
+    background: url("img/renovacion.png"); /*renovacion*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 1240px;
+    left: 445px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    overflow: hidden;
+    
+  }
+  
+  .v135_26 {
+    width: 422px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 102px;
+    left: 64px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 60px;
+    opacity: 1;
+    text-align: center;
+  }
+
+
+  .v180_103 {
+    width: 100%;
+    height: 823px;
+    background: url("img/img.avif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 1827px;
+    left: 0px;
+    overflow: hidden;
+  }
+  
+  .v180_104 {
+    width: 80%;
+    color: white;
+    position: absolute;
+    top: 2047px;
+    left: 12%;
+    font-family: Roboto;
+    font-weight: Bold Italic;
+    font-size: 55px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v180_105 {
+    width: 357px;
+    color:white;
+    position: absolute;
+    top: 2300px;
+    left: 40%;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 50px;
+    opacity: 1;
+    text-align: center;
+  }
+  
+
+
+  /* Estilo del footer */
+footer {
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #227CBD;
+    color: white;
+    text-align: center;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+.logo-footer img {
+    height: 50px;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 20px;
+  
+}
+.ini{
+    text-decoration: none;
+    color: white;
+ font-weight: SemiBold;
+}
+
+
+
+/* RESPONSIVIDAD: Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo-footer {
+        margin: 10px 0;
+    }
+    
+    .menu-icon {
+        height: 20px;
+        width: 25px;
+    }
+
+    .bar {
+        height: 3px;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .social-media img {
+        width: 25px;
+        height: 25px;
+    }
+}

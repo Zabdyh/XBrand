@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, Helvetica,Arial, sans-serif;
+    background: linear-gradient(#11212D, #010101);
+    min-height: 350vh; /* Cambiado a min-height para mostrar el degradado */
+}
+
+header {
+    background-color:  rgba(34, 124, 189, 0.9);; /* Color con opacidad para el header */
+    height: 100px;
+    display: flex;
+    justify-content: center; /* Centra el contenido en el header */
+    align-items: center;
+    position: fixed; /* Fija el header */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centra el logo */
+    align-items: center;
+    position: relative;
+    width: 100%; /* Cambiado a 100% para ajustarse al header */
+    padding: 0 20px; /* Espaciado en los lados */
+}
+
+.menu-icon {
+    cursor: pointer;
+    position: absolute; /* Posición absoluta para el menú */
+    left: 20px; /* Mantiene el icono del menú a la izquierda */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 30px;
+}
+
+.bar {
+    height: 4px;
+    width: 100%;
+    background-color: white;
+}
+
+.logo {
+    flex: 1; /* Permite que el logo ocupe el espacio disponible */
+    display: flex; /* Usar flex para centrar el logo */
+    justify-content: center; /* Centra el logo */
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    position: fixed;
+    top: 100px; /* Cambiado a 100px para estar debajo del header */
+    left: -100%;
+    width: 250px;
+    height: calc(100vh - 100px); /* Altura dinámica según el tamaño de la ventana */
+    background-color: #11212D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: left 0.3s ease;
+}
+
+nav.active {
+    left: 0;
+    height: 200px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #227CBD;
+}
+
+
+
+  .v144_48 {
+    width: 100%;
+    height: 338px;
+    background: url("img/frase.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 956px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v144_49 {
+    width: 278px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 1000px;
+    left: 581px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 48px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v144_50 {
+    width: 843px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 1490px;
+    left: 86px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 40px;
+    opacity: 1;
+    text-align: left;
+  }
+ 
+  
+  .v144_56 {
+    width: 545px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 1110px;
+    left: 86px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v144_57 {
+    width: 514px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 1105px;
+    left: 846px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+  }
+  
+  .boton {
+    width: 217px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 1610px;
+    left: 86px;
+    overflow: hidden;
+  }
+  .v240_86 {
+    width: 217px;
+    height: 80px;
+    background: #227CBD;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    overflow: hidden;
+  }
+  .v240_87 {
+    width: 162px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 19px;
+    left: 27px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 36px;
+    opacity: 1;
+    text-align: center;
+  }
+   /* Estilo del footer */
+footer {
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #227CBD;
+    color: white;
+    text-align: center;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+.logo-footer img {
+    height: 50px;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 20px;
+  
+}
+.ini{
+    text-decoration: none;
+    color: white;
+ font-weight: SemiBold;
+}
+
+
+
+/* RESPONSIVIDAD: Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo-footer {
+        margin: 10px 0;
+    }
+    
+    .menu-icon {
+        height: 20px;
+        width: 25px;
+    }
+
+    .bar {
+        height: 3px;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .social-media img {
+        width: 25px;
+        height: 25px;
+    }
+}  
